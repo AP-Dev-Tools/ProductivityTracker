@@ -29,7 +29,6 @@ const App: React.FC = () => {
   useEffect(() => {
     const checkSetup = async () => {
       // Supabase is always initialized now (hardcoded credentials)
-      setIsInitialized(true);
 
       try {
         const session = await supabaseService.getSession();

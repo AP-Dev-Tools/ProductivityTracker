@@ -4,8 +4,8 @@ interface DataRow {
   id?: string;
   user_id: string;
   date: string;
-  entries: any[];
-  plans: any[];
+  entries: Record<string, any[]>;
+  plans: Record<string, any[]>;
   purpose_categories: any[];
   people: any[];
   updated_at?: string;
